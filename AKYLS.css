@@ -1,0 +1,115 @@
+.faclok {
+  border-style: inset;
+  border-width: 10px;
+  border-color: rgb(69, 5, 247);
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 750px;
+  background-color: rgb(147, 147, 247);
+}
+
+.kartin {
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+  margin-left: 500px;
+  margin-top: 3px;
+}
+
+.kartin2 {
+  position:fixed;
+  width: 200px;
+  height: auto;
+  border-radius: 50px;
+  margin-left: 200px;
+  margin-top: 175px;
+}
+
+.linia {
+  margin: 20px 0;
+  padding: 0;
+  height: 0;
+  border: none;
+  border-top: 5px solid #b81414;
+}
+
+.centr {
+margin-left: 200px;
+  margin-right: auto;
+  font-size: 80px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(0, 0, 0);}
+
+  .fon { margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-image: url(https://avatars.mds.yandex.net/i?id=beda0037ea8db2eef736ca90cf77f605b05d2ee3-4667938-images-thumbs&n=13);
+      background-size: cover; 
+      background-position: center;
+  }
+
+  .knopka1
+  {
+    background-color:#11eb0a;
+    cursor: pointer;
+    padding: 0px 60px;
+  }
+
+  .randomText {
+    margin-top: 200px;
+    font-size: 180px;
+}
+#MyInput {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 5px;
+  border: 1px solid #f0eded;
+  margin-bottom: 12px;
+}
+
+#myUL
+{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(91, 114, 243);
+}
+#myUL li a {
+  border: 1px solid #f0d8d8;
+  margin-top:-1px;
+  background: color #ebe2e2;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  display: block;
+}
+#myUL li a.header {
+  background-color: #a02424;
+  cursor: default;
+}
+#myUL li a:hover:not(.header){
+  background-color: #6b1717;
+}
+
+.body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s #eee;
+}
+
+.hover-area {
+  padding: 20px;
+  border: 2px solid #a57c7c;
+  background-color: #fcf1f1;
+  cursor: pointer;
+  text-align: center;
+}
+
+.hover-area:hover {
+  background-color: #6047ec;
+}

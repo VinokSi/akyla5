@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виды акул</title>
+    <style>
+        #randomText {
+            margin-left: 450px;
+            margin-bottom: 100px;
+            margin-top: 70px;
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+            font-weight: 900;
+            background-color: rgb(32, 168, 231);
+            border-radius: 20px;
+            border-width: 10px;
+            margin-right: 170px;
+
+        }
+    </style>
+    <link rel="stylesheet" href="AKYLS.css">
+</head>
+
+<body class="fon">
+    <input type="text" onkeyup="myFunction()" id="MyInput" placeholder="Search fo names akula">
+   <ul id="myUL">
+
+       <li><a href="#Kit">Китовая</a></li>
+       <li><a href="#Korot">Короткопалая</a></li>
+   
+    
+       <li><a href="#Giga">Гигантская</a></li>
+       <li><a href="#Molot">Молотилки</a></li>
+      
+       </ul>
+       <script>function myFunction(){
+         var input, filter, ul, li, a, i;
+         input = document.getElementById("MyInput");
+         filter = input.value.toUpperCase();
+         ul = document.getElementById("myUL");
+         li = ul.getElementsByTagName('li');
+     
+         for (i=0; i<li.length; i++){
+             a =li[i].getElementsByTagName("a")[0];
+             if (a.innerHTML.toUpperCase().indexOf(filter) > -1){
+                 li[i].style.display = "";
+                     }
+                     else{
+                         li[i].style.display = "none";
+                     }
+         }
+     }</script>
+
+    <img src="https://avatars.mds.yandex.net/i?id=8d8a16ab159056a0e8b915db3f37705e-5876180-images-thumbs&n=13"
+        alt="клас" class="kartin2">
+    <p class="faclok" style="color: rgba(#0e0e0e); font-size: 25px;" id="Kit">Китовая акула - самая крупная акула</p>
+    <img src="https://media1.tenor.com/m/DExmyo7XCUEAAAAd/shark-megalodon.gif" alt="Китовая" class="kartin">
+    <div class="linia"></div>
+    <p class="faclok" style="color: rgba(#0e0e0e); font-size: 25px;" id="Giga">Гигантская акула - вторая по величине акула</p>
+    <img src="https://www.thoughtco.com/thmb/eb_CW8Gdp0Jrxn2qS5EFKBlEWug=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/basking-shark-519029954-5b73356ac9e77c00509e41df.jpg"
+        alt="Большая самая" class="kartin">
+    <div class="linia"></div>
+    <p class="faclok" style="color: rgba(#0e0e0e); font-size: 25px;" id="Korot">Короткопалая акула мако - до 4 метров в длину</p>
+    <img src="https://www.thoughtco.com/thmb/zRQZcx3YBTMNgAB3UL4vLupOqN4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/shortfin-mako-sharks-131711556-5b7335b246e0fb002c10cb27.jpg"
+        alt="Короткая" class="kartin">
+    <div class="linia"></div>
+    <p class="faclok" style="color: rgba(#0e0e0e); font-size: 25px;" id="Molot">Акулы молотилки - используют хвост чтобы загонять и
+        глушить рыбу</p>
+    <img src="https://www.thoughtco.com/thmb/LbWDXqhCK6qeLQGkcWglwWTcfTg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/thresher-shark-520698168-5b7335f3c9e77c00509e575a.jpg"
+        alt="Молоток" class="kartin">
+
+    <button id="randomButton" type="submit" class="knopka1">
+        <p style="font-size: 20px; font-style: italic; font-weight:bolder;">Интерeсный факт</p>
+    </button>
+    <div id="randomText"></div>
+
+    <script>
+        const texts = [
+            "Акулы не чувствуют боли",
+            "За жизнь некоторые виды меняют до 350 тысяч зубов",
+            "Около 10% акул — живородящие",
+            "Каждая акула индивидуальна.",
+            "Бычья акула может жить в пресной воде.",
+            "Акула-ангел — рыба настолько же плоская, как и камбала."
+        ];
+
+        document.getElementById("randomButton").onclick = function () {
+            const randomIndex = Math.floor(Math.random() * texts.length);
+            document.getElementById("randomText").innerText = texts[randomIndex];
+        };
+    </script>
+
+<div class="hover-area">
+    Наведи на меня!
+</div>
+<script>const hoverArea = document.querySelector('.hover-area');
+
+hoverArea.addEventListener('mouseenter', () => {
+document.body.style.backgroundImage = "url('https://otvet.imgsmail.ru/download/304796237_af83827f9c60600fac7928d6f07bf49a_800.gif')"; // Замените 'ваша_гифка.gif' на путь к вашей гифке
+document.body.style.backgroundSize = 'cover'; 
+});
+
+hoverArea.addEventListener('mouseleave', () => {
+document.body.style.backgroundImage = ''; 
+});
+
+    
+    </script>
+   
+    <div class="linia"></div>
+    <div class="centr">cпасибо за просмотр
+    </div>
+
+
+
+</body>
+
+</html>
